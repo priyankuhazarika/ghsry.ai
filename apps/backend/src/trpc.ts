@@ -1,14 +1,12 @@
 import { ZodError } from "zod";
 import cookie from "cookie";
 import superjson from "superjson";
-import { prisma } from "@ghsry.ai/prisma";
 import { type inferAsyncReturnType, initTRPC, TRPCError } from "@trpc/server";
 import type { CreateExpressContextOptions } from "@trpc/server/adapters/express";
 
 /* Context */
 
 export const createContext = ({ req, res }: CreateExpressContextOptions) => ({
-  prisma,
   req,
   res,
 });
@@ -49,27 +47,9 @@ const authMiddleware = t.middleware(async ({ ctx, next }) => {
     throw new TRPCError({ code: "UNAUTHORIZED" });
   }
 
-  const session = await ctx.prisma.session.findUnique({
-    where: { id: authToken },
-    include: {
-      User: {
-        include: {
-          Memberships: {
-            include: { Role: true },
-          },
-        },
-      },
-    },
-  });
-
-  if (!session) {
-    throw new TRPCError({ code: "UNAUTHORIZED" });
-  }
-
   return next({
     ctx: {
       ...ctx,
-      session,
     },
   });
 });
