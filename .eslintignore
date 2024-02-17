@@ -1,0 +1,5 @@
+.eslintrc.cjs
+reset.d.ts
+**/build/
+**/dist/
+tmp
