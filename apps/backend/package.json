@@ -10,7 +10,8 @@
     "dev": "yarn typecheck && tsx watch --clear-screen=false ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "typecheck": "tsc --noEmit",
-    "migration:generate": "drizzle-kit generate:mysql"
+    "migration:generate": "drizzle-kit generate:mysql",
+    "migration:run": "tsx src/database/migrate.ts"
   },
   "dependencies": {
     "@ghsry.ai/shared": "*",
