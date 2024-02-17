@@ -14,4 +14,4 @@ export const users = mysqlTable("users", {
   createdAt: datetime("createdAt", { mode: "date" }).$default(() => new Date()),
 });
 
-export type User = typeof users.$inferSelect;
+// export type User = typeof users.$inferSelect;

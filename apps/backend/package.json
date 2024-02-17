@@ -9,7 +9,8 @@
     "build": "yarn typecheck && tsc",
     "dev": "yarn typecheck && tsx watch --clear-screen=false ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "migration:generate": "drizzle-kit generate:mysql"
   },
   "dependencies": {
     "@ghsry.ai/shared": "*",
