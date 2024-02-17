@@ -5,7 +5,7 @@ import { appRouter } from "./routers";
 import { createContext } from "./trpc";
 
 const app = express();
-const port = parseInt(process.env.PORT ?? "22281", 10);
+const port = parseInt(process.env.PORT ?? "6081", 10);
 
 if (process.env.NODE_ENV !== "production") {
   app.use((_req, _res, next) => {
