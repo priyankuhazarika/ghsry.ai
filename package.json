@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev:b": "yarn workspace @ghsry.ai/backend dev",
-    "dev:d": "yarn workspace @ghsry.ai/frontend dev",
+    "dev:f": "yarn workspace @ghsry.ai/frontend dev",
     "dev": "run-p dev:b dev:d",
     "prisma": "yarn workspace @ghsry.ai/prisma prisma",
     "pretty": "prettier . -w",

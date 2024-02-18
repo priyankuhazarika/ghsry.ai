@@ -662,6 +662,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fusionauth/react-sdk@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@fusionauth/react-sdk@npm:1.0.6"
+  dependencies:
+    classnames: ^2.3.2
+    js-cookie: ^3.0.1
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 185cf6e041ee18a7eb8583a93fab756b0b169bb8f52b4d6bb9bccde06fc0c8c5c35f1c566b3348e37a07b5c222f92a502f1ecf306fd740e1f63d31891d55ca66
+  languageName: node
+  linkType: hard
+
 "@ghsry.ai/backend@workspace:apps/backend":
   version: 0.0.0-use.local
   resolution: "@ghsry.ai/backend@workspace:apps/backend"
@@ -696,6 +709,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ghsry.ai/frontend@workspace:apps/frontend"
   dependencies:
+    "@fusionauth/react-sdk": ^1.0.6
     "@types/react": ^18.2.55
     "@types/react-dom": ^18.2.19
     "@typescript-eslint/eslint-plugin": ^6.21.0
@@ -1789,6 +1803,13 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.3.2":
+  version: 2.5.1
+  resolution: "classnames@npm:2.5.1"
+  checksum: da424a8a6f3a96a2e87d01a432ba19315503294ac7e025f9fece656db6b6a0f7b5003bb1fbb51cbb0d9624d964f1b9bb35a51c73af9b2434c7b292c42231c1e5
   languageName: node
   linkType: hard
 
@@ -3702,6 +3723,13 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 57d43ad11eadc98cdfe7496612f6bbb5255ea69fe51ea431162db302c2a11011642f50cfad57288bd0aea78384a0612b16e131944ad8ecd09d619041c8531b54
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^3.0.1":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 2dbd2809c6180fbcf060c6957cb82dbb47edae0ead6bd71cbeedf448aa6b6923115003b995f7d3e3077bfe2cb76295ea6b584eb7196cca8ba0a09f389f64967a
   languageName: node
   linkType: hard
 
